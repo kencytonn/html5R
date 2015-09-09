@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<hmtl>
+<title></title>
+<head></head>
+<body>
+	<style type="text/css">
+a:link, a:visited {
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color:#a19c81;
+    text-align: center;
+    padding: 2px;
+    text-decoration:blink ;
+}
+li{
+	display: inline;
+}
+a:hover, a:active {
+    background-color: #7A991A;
+}
+video{
+	margin-left: 0px;
+}
+h1{
+	text-align: center;
+}
+#small-vid{
+float:left;
+}
+#v{
+	
+}
+.big-video{
+float: left;
+	padding: 20px;
+	width:800px;
+}
+
+progress{
+	width: 700px;
+}
+.amara-img{
+width: 0px;
+position: relative;
+
+}
+footer{
+padding:20px;
+}
+	</style>
+
+	<section>
+	<header>
+<h1>Amara Ridge</h1>
+	<nav>
+<ul>
+<li><a href="amara.html">Home</a></li>
+<li><a href="buyers.html">Intrested Buyers</a></li>
+</ul>
+	</nav>
+	</header>
+	</section>
+	<section class="big-video">
+<video id="v" width="800" controls>
+  <source src="amara.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video >
+<progress id="p"  max='300' value='0'><span>0</span> % played</progress>
+</section>
+<section class="amara-img">
+<figure>
+	<img src="amara.jpeg"></img>
+	<figcaption><i>A taste of Amara.</i></figcaption>
+
+</figure>
+</section>
+	<article>
+		<h1>The Amara ridge</h1>
+		<p>The Amara ridge But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+	</article>
+	<aside>
+<article>
+	<h2>Amara contemporary</h2>
+he Amara ridge But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some
+</article>
+	</aside>
+
+	<footer>
+		&#169; Copyright Amara Ridge 2015.
+</footer>
+<script type="text/javascript">
+var video = document.getElementById('v');
+var pBar = document.getElementById('p');
+video.addEventListener('timeupdate', function() {
+  var percent = Math.floor((100 / video.duration) * video.currentTime);
+  pBar.value = percent;
+  pBar.getElementsByTagName('span')[0].innerHTML = percent;
+}, false);
+</script>
+</body>
+
+</html>
